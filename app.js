@@ -1,18 +1,5 @@
 
-
-
-
-
-
 /*
-
-## Q + A
-1. How do we assign a value to a variable?
-2. How do we change the value of a variable?
-3. How do we assign an existing variable to a new variable?
-4. Remind me, what are declare, assign, and define?
-*/
-
 //1.
 let myVar = "my strig value"; 
 //2.
@@ -25,41 +12,6 @@ myVar = var2;
 
 console.log(myVar);
 
-/*
-4. 
-ans: when we declare a variable, we are creating a new variable using let myVar, 
-when we give the variable a value we are assigning it a value myVar = 3.
-Defining is when we create a function, 
-and define what the function is supposed to do.
-`
-
-### Research 
-
-//5. What is pseudocoding and why should you do it?
-
-Pseudocoding is writing code in plain language that can be understoon by humans. It helps us to break down our code 
-into small portions.  
-
-6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
-Ans: 70% of the time should be focused on plannning the solution to the problem and the 
-
-## Strings
-*/
-/*
-**For all other questions that involve writing code, you can solve them via the app.js folder under it's respectice section** 
-
-- Create a variable called firstVariable *
-- Assign it the value of the string "Hello World"*
-- Change the value of this variable to some number*
-- Store the value of firstVariablein a new variable called secondVariable*
-- Change the value of secondVariableto any string.*
-
-What is the value of firstVariable?
-
-- Create a variable called yourName and set it equal to your name as a string. Then, write an expression that takes the string `"Hello, my name is "` and the variable yourName. 
-
-ex output: Hello, my name is Jean Valjean
-*/
 
    let firstVariable = "Hello World";
    firstVariable = 56;
@@ -73,16 +25,6 @@ ex output: Hello, my name is Jean Valjean
    let yourName = "Manish Chaudahri";
    let string1 = `Hello! my name is ${yourName}`;
 
-/*
-## Booleans
-
-Using the provided variable definitions, replace the blanks so that all log statements print truein the console. 
-Answers should be all be valid JS syntax and not weird things that don't make sense
-but happen to print true to the console:
-
-
-
-*/ 
 
 const a = 4;
 const b = 53;
@@ -99,22 +41,15 @@ console.log('Name' =='Name');
 
 
 // FOR THE NEXT TWO, USE ONLY && OR ||
-
+   console.log("OR or AND ");
   console.log(true || false);
-  console.log(!false || false ||  false || false || false ||true);
-  console.log(!false &&false)
+  console.log(!false || false || false || false || false ||true);
+  console.log(false ===false)
   console.log(e == 'Kevin');
-  console.log((a || b) || c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
-  console.log(a ||(a || d)); // note: the answer is a simple arithmetic equation, not something "weird"`
+  console.log(a < b && a< c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+  console.log(a ||a || d); // note: the answer is a simple arithmetic equation, not something "weird"`
   console.log(48 == '48');
-/*
-### The Farm 
 
-1. Declare a variable animal. Set it to be either "cow" or something else*
-2. Write code that will print out "mooooo" if the it is equal to cow*
-3. Change your code so that if the variable animalis anything other than a cow, it will print `"Hey! You're not a cow."`*
-4. Commit
-*/
 let animal ="cow";
 const moo = (_animal) =>{
    if (_animal == "cow"){
@@ -126,111 +61,126 @@ const moo = (_animal) =>{
 moo("peanut");
 
 
-
-/*
-### Driver's Ed
-Make a variable that holds a person's age; be semantic
-Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+let userAge =30;
 
 
-## Loops
+function drive (userAge){
+   if(userAge >= 16){
+      console.log("Here are the keys!");
+   }
+   else console.log("Sorry you're too young.")
 
-Remember: USE letwhen you initialize your for loops!
+}
 
-This is GOOD: `for(let i = 0; i < 100; i++)`
-
-This is NO GOOD: `for(i = 0; i < 100; i++)`
-
-
-*/
+drive(16);
+ 
 
 
 
-/*
+   for ( let i =0; i<11 ; i++){
+      console.log(`i = ${i}`);
+   }
 
-### The basics
-
-- Write a loop that will print out all the numbers from 0 to 10, inclusive
-- Write a loop that will print out all the numbers from 10 up to and including 400
-- Write a loop that will print out every third number starting with 12 and going no higher than 4000
-
-
-
-### B. Get even
-Print out the numbers that are within the range of 1 - 100
-Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
+   for ( let i =10; i<=400 ; i++){
+      console.log(`i = ${i}`);
+   }
 
 
-
-### C. Give me Five
-For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five:
-
-**Example Output:**
-
-I found a 5. High five!
-I found a 10. High five!
-
-
-Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three
-
-**Example Output:**
-
-I found a 3. Three is a crowd
-I found a 5. High five!
-I found a 6. Three is a crowd
-I found a 9. Three is a crowd
-I found a 10. High five!
-
-
-For numbers divisible by both three and five, be sure your code prints both messages
-
-
-
-### D. Savings account
-
-- Write code that will save the sum of all the numbers between 1 - 10 to a variable called `bank_account`.
-- Check your work! Your `bank_account` should have $55 in it.
-
-You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
-
-Check your work! Your `bank_account` should have $10,100 in it.
+for (let i =1; i <=100; ++i){
+   if ( i%2 == 0){
+      console.log(`${i} <-- is an even number`);
+   }
+   else console.log(`${i}`); 
+}
 
 
 
 
-## III. Arrays & Control flow
+for (let i =1; i <=100; ++i){
+   if ( i%5 == 0){
+      console.log(`I found a ${i}. High five!`);
+   }
+
+}
+
+
+for (let i =1; i <=100; ++i){
+
+   if ( i%3 == 0){
+      console.log(`I found a ${i}. Three is a crowd`);
+   }
+   else if ( i%5 == 0){
+      
+      console.log(`I found a ${i}. High five!`);
+   }
+
+}
 
 
 
-### A. Talk about it:
+let bank_account =0 ;
+
+for ( let i =1; i<=10; i++){
+   bank_account += i;
+}
+console.log(`$${bank_account}`);
+
+//DOUBLED 
+
+bank_account =0 ;
+for ( let i =1; i<=100; i++){
+   bank_account += i*2; 
+}
+console.log(`After doubling: $${bank_account}`);
+
+//III. Arrays & Control flow
+
+
+
+/*A. Talk about it:
 What are the things in an array called?
+
+Things in an array are called elements of the array.
+
 Do Arrays guarantee those things will be in order?
+
+Yes. Elements are saved in order in an array.
+
 What real-life thing could you model with an array?
 
-
-
-### B. Easy Does It
-Create an array that contains three quotes and store it in a variable called quotes
+Days of the week can be modeled in an array of size 7.
 
 
 
-### C. Accessing elements
 
-Given the following array `const randomThings = [1, 10, "Hello", true]`
+let quotes = [
+   "Sometimes even to live is an act of courage.",
+   "Luck is what happens when preparation meets opportunity.",
+   "We suffer more often in imagination than in reality",
 
-- How do you access the 1st element in the array?
+]
 
-- Change the value of `"Hello"` to `"World"`
+console.log(quotes);
 
-- Check the value of the array to make sure it updated the array using `console.log()`
+//C.Accessing elements
+const randomThings = [1, 10, "Hello", true];
+
+randomThings[0];
+randomThings[2]="World";
+
+console.log(randomThings);
+
+//D. Change values
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+
+ourClass[2];
+ourClass[4]= "Octocat";
+ourClass.push("Cloud City");
 
 
-### D. Change values
-Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+console.log(ourClass);
 
-What would you write to access the 3rd element of the array?
-Change the value of "Github" to "Octocat"
-Add a new element, "Cloud City" to the array
+
 
 
 
@@ -241,39 +191,53 @@ Note: You don't really need `.splice()` for these. You could use it, but there a
 Given the following array: `const myArray = [5, 10, 500, 20]`
 
 - Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
-- Remove the 5from the beginning of the array.
+- Remove the 5 from the beginning of the array.
 - Add the string "Bob Marley"to the beginning of the array.
 - Remove the string of your choice from the end of the array.
 - Reverse this array using `Array.prototype.reverse()`. 
 - Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+   Ans : Yes the .reverse() method returns the array in reversed order.
+
+//E. Mix It Up
+   const myArray = [5, 10, 500, 20];
+
+   myArray.push("Aegon");
+   myArray.shift();
+   myArray.unshift("Bob Marley");
+   myArray.pop();
+   myArray.reverse();
+
+
+//F. Biggie Smalls
+
+
+   let var1 = 134;
+
+   if ( var1 <100){
+      console.log("Little number");
+
+   }
+   else console.log("Big number");
+
+
+//G. Monkey in the Middle
 
 
 
-### F. Biggie Smalls
+let var1 = 7;
 
-Create a variable that contains an integer.
+if ( var1 <5){
+   console.log("Little number");
 
-Write an `if ... else` statement that:
+}
+else if(  var1 >=5 && var1 <=10){
+   console.log("monkey");
 
-- `console.log()s` "little number" if the number is entered is less than 100
-- `console.log()s` "big number" if the number is greater than or equal to 100.
-
-
-
-### G. Monkey in the Middle
-
-Write an `if ... else if ... else` statement:
-
-1. console.log()little numberif the number entered is less than 5.
-2. If the number entered is more than 10, log big number.
-3. Otherwise, log "monkey".
+} else console.log("Big number");
 
 
+//. What's in Your Closet?
 
-### H. What's in Your Closet?
-Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
-
-```
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -283,17 +247,20 @@ const kristynsCloset = [
   "yellow knit hat",
   "marshmallow peeps"
 ];
-```
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
+//1.
+console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`);
 
-`// Thom's closet is more complicated. Check out this nested data structure!!`
-```
+//2.
+
+let tempVar = kristynsCloset.pop();
+kristynsCloset.push("raybans");
+kristynsCloset.push(tempVar);
+kristynsCloset[kristynsCloset.length-2] = "stained knit hat";
+
+
+
+// Thom's closet is more complicated. Check out this nested data structure!!`
+
 const thomsCloset = [
   [
     // These are Thom's shirts
@@ -301,124 +268,145 @@ const thomsCloset = [
     "dark grey button-up",
     "light blue button-up",
     "blue button-up",
-  ],[
+  ],
+  [
     // These are Thom's pants
     "grey jeans",
     "jeans",
     "PJs"
-  ],[
+  ],
+  [
     // Thom's accessories
     "wool mittens",
     "wool scarf",
     "raybans"
   ]
 ];
-```
 
-**What's Kristyn wearing today?**
+console.log("Thom is wearing", thomsCloset[0][2], ",",thomsCloset[1][1],"and",thomsCloset[2][2], "today.");
 
-1. Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+thomsCloset[1][2] = "Footie Pajamas";
 
-
-2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
-Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
-
-3. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
-
-**In the same way, access one item from Thom's pants array.**
-
-- Access one item from Thom's accessories array.
-- Log a sentence about what Thom's wearing. 
-*Example:* "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
-
-- Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+console.log(thomsCloset);
 
 
+//IV. FUNCTIONS
+//A. printGreeting  //SKIPPED
 
-## IV. Functions
+//B.
 
+const printCool=(name)=>{
+   console.log(name," is really cool!");
 
-### A. printGreeting
+}
 
-Do you think you could write a function called `printGreetingwith` a parameter name that returns a greeting with the argument interpolated into the greeting?
+printCool("Manish");
+//C.
 
-Like so?
+const calculateCube = (num) => {
+   return num*num*num;
 
-``console.log(printGreeting("Slimer")); `
-`=> Hello there, Slimer!``
+}
+console.log(`Calculate cube: `,calculateCube(3));
 
-You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
+//D. 
+      const isVowel= (aChar)=>{
 
+         let vowels = ['a','A','e','E','i','I','o','O','u','U'];
+         for ( let i= 0 ; i <vowels.length; i++){
+            if (aChar ==vowels[i] ){
+               return true;
+            }
+                
+         }
+         return false;
+         
+      }
 
-### B. printCool
-
-Write a function `printCoolthat` accepts one parameter, `name`, as an argument. The function should print the name and a message saying that that person is cool.
-
-`console.log(printCool("Captain Reynolds"));`
-`=> "Captain Reynolds is cool";`
-
-
-
-
-### C. calculateCube
-Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
-
-`console.log(calculateCube(5));`
-`=> 125`
-
-
-
-
-## D. isVowel
-
-1. Write a function `isVoweltha`t takes a character (i.e. a string of length 1) and returns `true` if it is a vowel, `false` otherwise. 
-
-2. The vowel could be upper or lower case. 
-
-Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
-
-`console.log(isVowel("a"));`
-`=> true`
+      
+      console.log(isVowel('U'));
 
 
+      //E.
+
+      function getTwoLengths(string1, string2){
+
+         let val1 = string1.length;
+         let val2 = string2.length;
+
+         let myArr = [val1,val2];
+         return myArr;
+
+      }
+
+      console.log( getTwoLengths("book","surprise"));
+//F.
 
 
-### E. getTwoLengths
+      const getMultipleLengths = (arrayIn) => {
 
-Write a function `getTwoLengthsthat` accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+         let answer = [];
 
-`console.log(getTwoLengths("Hank", "Hippopopalous"));`
-`=> [4, 13]`
+         for ( let i = 0 ; i < arrayIn.length; i++){
+
+            answer[i] = arrayIn[i].length;
+
+         }
+         return answer;
+
+      }
 
 
 
 
-### F. getMultipleLengths
+console.log('multiple lengths ',getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
-Write a function `getMultipleLengthsthat` accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+//G.
 
-`console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));`
-`=> [5, 4, 2, 2, 4]`
+      const maxOfThree = (num1, num2, num3) =>{
+
+         let args = [num1,num2,num3];
+
+         let max = num1;
+
+         for (i = 0 ; i<3; i++ ){
+            if (args[i]> max){
+               max= args[i];
+
+            }
+         
+         }
+         return max;
+
+
+      }
+
+
+      console.log(`Max of three: `,maxOfThree(3,50,67));
+
+//H.
+      const printLongestWord = (arr)=>{ 
+
+         let longestWord = arr[0];
+
+         for ( let i=0; i <arr.length; i++){
+            if (  arr[i].length > longestWord.length)
+               longestWord = arr[i];
+
+         }
+         return longestWord;
+
+      }
+
+      console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+*/
 
 
 
-
-### G. maxOfThree
-Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
-
-console.log(maxOfThree(6, 9, 1));
-=> 9
-
-Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
+/*
 
 
 
-
-### H. printLongestWord
-Write a function printLongestWordthat accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
-
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-=> "Peanutbutter"
 
 
 
@@ -617,76 +605,3 @@ The above console.log is two levels deep of combineCats.
 */
 
 
-
-//**********************************************************************************************************************************
-//**********************************************************************************************************************************
-/*
-// STRINGS
-
-// firstVariable = "hello world";
-// firstVariable = 1;
-// let secondVariable = firstVariable;
-// secondVariable = "any string";
-
-// console.log(firstVariable); //1
-
-// const yourName = "Ariel";
-// let hello = `Hello, my name is ${yourName}`
-// console.log(hello);
-
-//BOOLEANS
-
-// const a = 4; 
-// const b = 53; 
-// const c = 57; 
-// const d = 16; 
-// const e = 'Kevin';
-
-// console.log(a < b); 
-// console.log(c > d); 
-// console.log('Name' == 'Name');
-
-//FOR THE NEXT TWO, USE ONLY && OR ||
-// console.log(true || false); 
-// console.log(false && false && false && false && false || true); 
-// console.log(false === false) 
-// console.log(e == 'Kevin'); 
-// console.log(a != b != c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations) 
-// console.log(a == a || d); // note: the answer is a simple arithmetic equation, not something "weird" console.log(48 __ '48');
-
-
-//the Farm
-let animal = "cow";
-
-const moo = (a) => {
-   return a.toLowerCase === "cow"? "mooooo" : "hey, that's not a cow"
-} 
-
-console.log(moo(animal));
-//Driver's Ed
-
-//LOOPS
-
-//The Basics
-
-//Get Even
-
-//Give Me 5
-
-//Savings Account
-
-//ARRAYS & CONTROL FLOW
-
-//OBJECTS
-
-
-// let longest = array.reduce( (firstEl, secondEl) => {
-//         //if the first el is greater than the second el return firstEl
-//         return firstEl.length > secondEl.length ? firstEl : secondEl;
-//     }
-// );
-
-// console.log(longest)
-
-
-*/
