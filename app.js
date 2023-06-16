@@ -395,6 +395,7 @@ console.log('multiple lengths ',getMultipleLengths(["hello", "what", "is", "up",
 
 
    }
+   console.log('my user : \n\n', user);
 
    user.email = "newemail@yahoo.com";
    user.age++;
@@ -451,8 +452,8 @@ console.log('multiple lengths ',getMultipleLengths(["hello", "what", "is", "up",
    console.log(user);
 
    function oldAndLoud(person){
-      person.age = person.age++;
-      person.name[0] = person.name[0].toUpperCase();
+      person.age++;
+      person.name.toUpperCase();
 
    }
 
