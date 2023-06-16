@@ -449,15 +449,20 @@ console.log('multiple lengths ',getMultipleLengths(["hello", "what", "is", "up",
    updateUser();
 
    console.log(user);
-/*
+
    function oldAndLoud(person){
-      person.age++;
-      person.name = person.user.toUpperCase();
+      person.age = person.age++;
+      person.name[0] = person.name[0].toUpperCase();
 
    }
 
-   */
-  // oldAndLoud(user);
+
+   console.log(user);
+   console.log("After old and new func");
+   oldAndLoud(user);
+   console.log(user);
+
+
 
 
 
